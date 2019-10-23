@@ -26,3 +26,6 @@ alias please='sudo $(fc -ln -1)'
 alias sl=ls
 alias vim=nvim
 alias vfzf='nvim $(fzf)'
+
+# for git dotfile management
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'"
