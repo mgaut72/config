@@ -1,6 +1,7 @@
 # Config
 
 [Inspiration](https://www.atlassian.com/git/tutorials/dotfiles)
+
 [Github URL Shortener](https://github.blog/2011-11-10-git-io-github-url-shortener/)
 
 ## Clone / Init on New Machine
