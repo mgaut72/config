@@ -28,4 +28,12 @@ alias vim=nvim
 alias vfzf='nvim $(fzf)'
 
 # for git dotfile management
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+config () {
+    case $1 in
+        bootstrap)
+            sh "$HOME/.cfg.bootstrap.sh"
+            ;;
+        *)
+            /usr/bin/git --git-dir="$HOME/.cfg/" --work-tree="$HOME" "$@"
+    esac
+}
