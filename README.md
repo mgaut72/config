@@ -1,8 +1,6 @@
 # Config
 
-[Inspiration](https://www.atlassian.com/git/tutorials/dotfiles)
-
-[Github URL Shortener](https://github.blog/2011-11-10-git-io-github-url-shortener/)
+Dotfiles and Other Configuration
 
 ## Clone / Init on New Machine
 
@@ -12,3 +10,13 @@
 ```
 curl -Lks https://git.io/mgaut72-config-clone | /bin/sh
 ```
+
+## Env Config Inspiration
+
+Check means implemented, unchecked is potential stuff to try
+
+- [ ] [base16 color themes](http://chriskempson.com/projects/base16/)
+- [x] [This Repo's Methodology](https://www.atlassian.com/git/tutorials/dotfiles)
+- [x] [Github URL Shortener](https://github.blog/2011-11-10-git-io-github-url-shortener/)
+- [x] [Vim + FZF + RipGrep](https://medium.com/@sidneyliebrand/how-fzf-and-ripgrep-improved-my-workflow-61c7ca212861)
+- [ ] https://www.wezm.net/technical/2019/10/useful-command-line-tools/
