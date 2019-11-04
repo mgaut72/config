@@ -20,3 +20,4 @@ Check means implemented, unchecked is potential stuff to try
 - [x] [Github URL Shortener](https://github.blog/2011-11-10-git-io-github-url-shortener/)
 - [x] [Vim + FZF + RipGrep](https://medium.com/@sidneyliebrand/how-fzf-and-ripgrep-improved-my-workflow-61c7ca212861)
 - [ ] https://www.wezm.net/technical/2019/10/useful-command-line-tools/
+- [ ] https://github.com/gpakosz/.tmux or some other nice tmux config?
