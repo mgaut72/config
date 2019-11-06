@@ -136,3 +136,8 @@ export EDITOR=nvim
 export RIPGREP_CONFIG_PATH=$HOME/.config/ripgrep/ripgreprc
 
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
+
+# when sshing onto this host, auto-start tmux
+if [[ -n "$PS1" ]] && [[ -z "$TMUX" ]] && [ "$SSH_CONNECTION" != "" ]; then
+    tmux attach-session -t ssh_tmux || tmux new-session -s ssh_tmux
+fi
