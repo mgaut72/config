@@ -21,3 +21,4 @@ Check means implemented, unchecked is potential stuff to try
 - [x] [Vim + FZF + RipGrep](https://medium.com/@sidneyliebrand/how-fzf-and-ripgrep-improved-my-workflow-61c7ca212861)
 - [ ] https://www.wezm.net/technical/2019/10/useful-command-line-tools/
 - [ ] https://github.com/gpakosz/.tmux or some other nice tmux config?
+- [ ] [jq](https://stedolan.github.io/jq/) / [jq cookbook](https://github.com/stedolan/jq/wiki/Cookbook#list-keys-used-in-any-object-in-a-list)
