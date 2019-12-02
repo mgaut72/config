@@ -70,6 +70,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 plugins=(
   git
   osx
+  pyenv
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -102,6 +103,8 @@ source $ZSH/oh-my-zsh.sh
 
 # completions
 autoload -U compinit && compinit
+
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z-_}={A-Za-z_-} r:|=*' '+ r:|[._-]=* l:|=*'
 
 setopt hist_ignore_dups
 setopt hist_expire_dups_first
