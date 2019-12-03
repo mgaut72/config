@@ -22,3 +22,4 @@ Check means implemented, unchecked is potential stuff to try
 - [ ] https://www.wezm.net/technical/2019/10/useful-command-line-tools/
 - [ ] https://github.com/gpakosz/.tmux or some other nice tmux config?
 - [ ] [jq](https://stedolan.github.io/jq/) / [jq cookbook](https://github.com/stedolan/jq/wiki/Cookbook#list-keys-used-in-any-object-in-a-list)
+- [ ] [py env](https://github.com/pyenv/pyenv/) - not yet automated into this repo
