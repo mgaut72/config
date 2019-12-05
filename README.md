@@ -6,10 +6,13 @@ Dotfiles and Other Configuration
 
 [Init Script Gist](https://gist.github.com/mgaut72/c03065e35e57db27bc676bb6d28db0a2)
 
-
 ```
 curl -Lks https://git.io/mgaut72-config-clone | /bin/sh
 ```
+
+
+Run `.cfg.bootstrap.sh` to install and instantiate templates
+
 
 ## `.local` files
 Have non-generic stuff? don't put it in here.  Instead, source/reference a `.local` file from a file included here.
