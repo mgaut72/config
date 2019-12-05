@@ -11,6 +11,16 @@ Dotfiles and Other Configuration
 curl -Lks https://git.io/mgaut72-config-clone | /bin/sh
 ```
 
+## `.local` files
+Have non-generic stuff? don't put it in here.  Instead, source/reference a `.local` file from a file included here.
+Ex:
+`.zshrc`
+```
+# other zshrc stuff
+# ...
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
+```
+
 ## Env Config Inspiration
 
 Check means implemented, unchecked is potential stuff to try
