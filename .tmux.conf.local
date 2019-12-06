@@ -294,3 +294,9 @@ tmux_conf_copy_to_os_clipboard=false
 
 # move status line to top
 #set -g status-position top
+
+
+# tmux SSH_AUTH_SOCK uses symlink socket which gets refreshed when we ssh.
+# See ~/.ssh/rc
+# see: https://werat.github.io/2017/02/04/tmux-ssh-agent-forwarding.html#fn:3
+set-environment -g 'SSH_AUTH_SOCK' ~/.ssh/ssh_auth_sock
