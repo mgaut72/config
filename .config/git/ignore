@@ -22,3 +22,6 @@ build
 
 # intellij
 *.iml
+
+# osx
+.DS_Store
