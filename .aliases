@@ -37,3 +37,14 @@ config () {
             /usr/bin/git --git-dir="$HOME/.cfg/" --work-tree="$HOME" "$@"
     esac
 }
+
+# for git dotfile management
+workconfig () {
+    case $1 in
+        bootstrap)
+            sh "$HOME/.workcfg.bootstrap.sh"
+            ;;
+        *)
+            /usr/bin/git --git-dir="$HOME/.workcfg/" --work-tree="$HOME" "$@"
+    esac
+}
