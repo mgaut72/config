@@ -139,12 +139,4 @@ export EDITOR=nvim
 export RIPGREP_CONFIG_PATH=$HOME/.config/ripgrep/ripgreprc
 
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
-
-if [ -S ~/.ssh/ssh_auth_sock ]; then
-    export SSH_AUTH_SOCK=$HOME/.ssh/ssh_auth_sock
-fi
-
-# when sshing onto this host, auto-start tmux if we have it
-if [ -x "$(command -v tmux)" ] && [[ -n "$PS1" ]] && [[ -z "$TMUX" ]] && [ "$SSH_CONNECTION" != "" ]; then
-    tmux attach-session -t ssh_tmux || tmux new-session -s ssh_tmux
-fi
+export PATH=$PATH:/usr/local/bin  # MIDWAY PATH: Path changed for ssh
