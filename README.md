@@ -24,6 +24,16 @@ Ex:
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
 ```
 
+## Auto-TMUX when SSHing onto a remote desktop
+* My .zshrc is setup such that when I ssh onto a host with that zshrc, it starts up or resumes and existing tmux session: https://github.com/mgaut72/config/blob/c974d39cdbdb224eca0189c98f4ac49763642d3a/.zshrc#L149-L152
+* I followed this blog: https://werat.dev/blog/happy-ssh-agent-forwarding/ to ensure that when I ssh and resume a tmux session, my ssh agent gets refreshed
+  * https://github.com/mgaut72/config/blob/master/.zshrc#L145-L147
+  * https://github.com/mgaut72/config/blob/master/.ssh/rc
+  * https://github.com/mgaut72/config/blob/c974d39cdbdb224eca0189c98f4ac49763642d3a/.tmux.conf.local#L299-L303
+* I personally use oh-my-tmux, which has some niceties built in, but this is not strictly necessary.
+
+Now when I ssh onto my remote desktop, I resume any previous ssh session.  To sign off of my remote desktop for the day, I first DETACH FROM TMUX, then logout of the remote desktop.
+
 ## Env Config Inspiration
 
 Check means implemented, unchecked is potential stuff to try
