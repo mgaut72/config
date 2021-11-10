@@ -69,7 +69,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  osx
+  macos
   pyenv
 )
 
@@ -145,6 +145,9 @@ export RIPGREP_CONFIG_PATH=$HOME/.config/ripgrep/ripgreprc
 if [ -S ~/.ssh/ssh_auth_sock ]; then
     export SSH_AUTH_SOCK=$HOME/.ssh/ssh_auth_sock
 fi
+
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 # when sshing onto this host, auto-start tmux if we have it
 if [ -x "$(command -v tmux)" ] && [[ -n "$PS1" ]] && [[ -z "$TMUX" ]] && [ "$SSH_CONNECTION" != "" ]; then
