@@ -139,8 +139,8 @@ export EDITOR=nvim
 
 export RIPGREP_CONFIG_PATH=$HOME/.config/ripgrep/ripgreprc
 
-[ -f ~/.zshrc.local ] && source ~/.zshrc.local
 [ -f ~/.zshrc.work ] && source ~/.zshrc.work
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
 if [ -S ~/.ssh/ssh_auth_sock ]; then
     export SSH_AUTH_SOCK=$HOME/.ssh/ssh_auth_sock
